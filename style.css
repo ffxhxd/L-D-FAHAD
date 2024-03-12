@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    font-size: 62.5%; /* Set 1rem to 10px for easier calculations (62.5% of 16px) */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-card{
+   padding: 1.2rem;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   gap: 1.2rem;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.contact-group-button-container{
+    background-color: #f4f6f8;
+    padding: 0.4rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.contacts-button, .groups-button{
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    width: 100%;
+    background-color: inherit;
+}
+
+.contacts-button{
+    background-color: #fff;
+}
+
+.contacts-button:hover, .groups-button:hover{
+    cursor: pointer;
+}
+
+.active{
+    background-color: #fff;
+}
+
+.number-of-contacts{    
+   color: #9da5ad;
+   font-size: 1.2rem;
+   font-weight: 400;
+}
+
+.card-list-single{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+    border-radius: 6px;
+    padding:0.7rem 0.8rem;
+}
+
+.card-list-single:hover{
+   transition:0.2s ease-in;
+   cursor: pointer;
+   background-color: #e8e8e8;
+}
+
+
+.card-list-single h2{
+    font-weight: 600;
+    margin-bottom:4px;
+    font-size: 1.5rem;
+}
+
+.card-list-single h3{
+    color: #9da5ad;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.user-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #282a40;
+    gap: 1rem;
+}
+
+
+.user-image{
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 1px solid #9da5ad;
+}
+
+.send-button-container{
+    padding: 3px;
+    border-radius: 6px;
+    background-color: #f4f6f8;
+}
+
+.send-button{
+    padding:0.8rem 1.4rem;
+    background-color: #fff;
+    border-radius: 6px;
+    color: #282a40;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border: none;
+}
+
+.send-button:hover{
+   cursor: pointer;
+  
+}
+
+.send-button i{
+ margin-right: 4px;
+}
+
+.add-button{
+background-image: linear-gradient(to bottom, #4e4f62, #45465a, #3c3e52, #34354b, #2b2d43);
+border: none;
+padding: 1.2rem;
+border-radius: 6px;
+font-size: 1.6rem;
+font-weight: 600;
+color: #fff;
+cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
